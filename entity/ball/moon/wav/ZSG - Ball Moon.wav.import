@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Ball Moon.wav-27c4823a8dc3d9f2762dad2be6f0f982.sample"
+
+[deps]
+
+source_file="res://entity/ball/moon/wav/ZSG - Ball Moon.wav"
+dest_files=[ "res://.import/ZSG - Ball Moon.wav-27c4823a8dc3d9f2762dad2be6f0f982.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

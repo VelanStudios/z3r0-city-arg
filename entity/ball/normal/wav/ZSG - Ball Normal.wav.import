@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Ball Normal.wav-d22dac7808043b1c2675348fb7c912f8.sample"
+
+[deps]
+
+source_file="res://entity/ball/normal/wav/ZSG - Ball Normal.wav"
+dest_files=[ "res://.import/ZSG - Ball Normal.wav-d22dac7808043b1c2675348fb7c912f8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

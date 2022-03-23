@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Bot Spawn.wav-1bd151e1cd15c1b5ee4e63ba25b5e9c6.sample"
+
+[deps]
+
+source_file="res://fx/bot_spawner/wav/ZSG - Bot Spawn.wav"
+dest_files=[ "res://.import/ZSG - Bot Spawn.wav-1bd151e1cd15c1b5ee4e63ba25b5e9c6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

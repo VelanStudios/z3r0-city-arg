@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://gui/Reward.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 512, 512 )
+
+[node name="Reward" type="Node2D" groups=[
+"Reward",
+]]
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 1024.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "//WE//ARE//IMPRESSED//BY//
+
+//Gorndt//
+//Zeppy64//
+//huggsboson//
+//AngelWind//
+//zigzag//
+//cridus//
+//Nivdot//
+//AyOhKay//
+//Yawsh//
+//SubliminalOwl//
+//NooK-JC//
+//Gay And Tired//
+//Power2playz//
+//Leo1355//
+//Payme42//
+//Andreqms//
+//Femboy Destiny 2//
+//undefined_//
+//Retry//"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 512, 512 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )

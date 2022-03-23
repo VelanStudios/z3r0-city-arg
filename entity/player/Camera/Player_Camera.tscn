@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://entity/player/Camera/Player_Camera.gd" type="Script" id=1]
+[ext_resource path="res://entity/spawn_manager/Spawn_Manager.tscn" type="PackedScene" id=2]
+[ext_resource path="res://gui/score_counter/Score_Counter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://gui/huh/huh.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 512, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 512 )
+
+[node name="Player_Camera" type="Node2D"]
+position = Vector2( 512, 512 )
+script = ExtResource( 1 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( -512, -512 )
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 512, -32 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 512, 1056 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -32, 512 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1056, 512 )
+shape = SubResource( 2 )
+
+[node name="Area2D_Up" type="Area2D" parent="."]
+position = Vector2( -512, -512 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Up"]
+position = Vector2( 512, -128 )
+shape = SubResource( 1 )
+
+[node name="Area2D_Down" type="Area2D" parent="."]
+position = Vector2( -512, -512 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D_Down"]
+position = Vector2( 512, 1152 )
+shape = SubResource( 1 )
+
+[node name="Area2D_Left" type="Area2D" parent="."]
+position = Vector2( -512, -512 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D_Left"]
+position = Vector2( -128, 512 )
+shape = SubResource( 2 )
+
+[node name="Area2D_Right" type="Area2D" parent="."]
+position = Vector2( -512, -512 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D_Right"]
+position = Vector2( 1152, 512 )
+shape = SubResource( 2 )
+
+[node name="Spawn_Manager" parent="." instance=ExtResource( 2 )]
+position = Vector2( -448, -448 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Score_Counter" parent="." instance=ExtResource( 3 )]
+margin_left = 256.0
+margin_top = -512.0
+margin_right = 384.0
+margin_bottom = -496.0
+
+[node name="Label_Base" type="Node2D" parent="."]
+position = Vector2( -512, -512 )
+
+[node name="Label" parent="Label_Base" instance=ExtResource( 4 )]
+visible = false
+
+[connection signal="body_entered" from="Area2D_Up" to="." method="_on_Area2D_Up_body_entered"]
+[connection signal="body_entered" from="Area2D_Down" to="." method="_on_Area2D_Down_body_entered"]
+[connection signal="body_entered" from="Area2D_Left" to="." method="_on_Area2D_Left_body_entered"]
+[connection signal="body_entered" from="Area2D_Right" to="." method="_on_Area2D_Right_body_entered"]

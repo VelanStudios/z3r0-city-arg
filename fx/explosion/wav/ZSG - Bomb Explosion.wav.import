@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Bomb Explosion.wav-8f78b6db3b13f2b9212d995223aedf5a.sample"
+
+[deps]
+
+source_file="res://fx/explosion/wav/ZSG - Bomb Explosion.wav"
+dest_files=[ "res://.import/ZSG - Bomb Explosion.wav-8f78b6db3b13f2b9212d995223aedf5a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Footstep.wav-26a6e87d22dfa11ff54b803ae8af3ef8.sample"
+
+[deps]
+
+source_file="res://entity/player/wav/ZSG - Footstep.wav"
+dest_files=[ "res://.import/ZSG - Footstep.wav-26a6e87d22dfa11ff54b803ae8af3ef8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

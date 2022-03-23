@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fx/papap/Papap Hearts.gd" type="Script" id=1]
+[ext_resource path="res://fx/papap/png/papap_1.png" type="Texture" id=2]
+[ext_resource path="res://fx/papap/png/papap_0.png" type="Texture" id=3]
+[ext_resource path="res://fx/papap/png/no_papap.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.5
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "no_papap",
+"speed": 5.0
+} ]
+
+[node name="Papap Hearts" type="AnimatedSprite"]
+z_index = 1
+frames = SubResource( 1 )
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

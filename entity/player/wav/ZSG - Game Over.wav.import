@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ZSG - Game Over.wav-ec2e9171ee2deb588419bec7cfd59535.sample"
+
+[deps]
+
+source_file="res://entity/player/wav/ZSG - Game Over.wav"
+dest_files=[ "res://.import/ZSG - Game Over.wav-ec2e9171ee2deb588419bec7cfd59535.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://entity/spawn_manager/Spawn_Manager.gd" type="Script" id=1]
+[ext_resource path="res://fx/bot_spawner/Bot_Spawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entity/ball/multi/Ball_Multi.tscn" type="PackedScene" id=3]
+[ext_resource path="res://entity/ball/normal/Ball_Normal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entity/ball/moon/Ball_Moon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://entity/ball/sniper/Ball_Sniper.tscn" type="PackedScene" id=6]
+[ext_resource path="res://entity/ball/bomb/Ball_Bomb.tscn" type="PackedScene" id=7]
+
+[node name="Spawn_Manager" type="Node2D"]
+script = ExtResource( 1 )
+ball_normal = ExtResource( 4 )
+ball_multi = ExtResource( 3 )
+ball_sniper = ExtResource( 6 )
+ball_moon = ExtResource( 5 )
+ball_bomb = ExtResource( 7 )
+bot_spawner = ExtResource( 2 )

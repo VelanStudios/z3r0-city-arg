@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://global/chonky/Chonky_Manager.gd" type="Script" id=1]
+[ext_resource path="res://entity/chonky/Chonky.tscn" type="PackedScene" id=2]
+
+[node name="Chonky_Manager" type="Node"]
+script = ExtResource( 1 )
+the_boi = ExtResource( 2 )

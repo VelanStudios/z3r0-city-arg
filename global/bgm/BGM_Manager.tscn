@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://global/bgm/BGM_Manager.gd" type="Script" id=1]
+[ext_resource path="res://global/bgm/wav/Bit Street Beat - Hook.wav" type="AudioStream" id=2]
+[ext_resource path="res://global/bgm/wav/Bit Street Beat - Loop.wav" type="AudioStream" id=3]
+
+[node name="BGM_Manager" type="Node"]
+script = ExtResource( 1 )
+bsb_intro = ExtResource( 2 )
+bsb_loop = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -15.0
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
